@@ -12,7 +12,7 @@
   .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #fe9000, #593df8);
+    background: linear-gradient(165deg, #ff9100, #0db838);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
@@ -100,7 +100,8 @@
   .error{
     text-align: left;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 20px;
+    color: black;
     margin-top: 10px;
     display: none;
   }
