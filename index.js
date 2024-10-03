@@ -129,17 +129,57 @@
 // const result = [3, 1, 2,6,8,2,3,5,4,956,4,4,8,8,56,9,54,8,5,5,6,4,5,9,6,55,4,].reverse();  // [1, 2, 3]
 // console.log(result);
 
-const arr = [1, 2, 3, 4];
-arr.copyWithin(1, 2);  // [1, 3, 4, 4]
-console.log(arr);
+// const arr = [1, 2, 3, 4];
+// arr.copyWithin(1, 2);  // [1, 3, 4, 4]
+// console.log(arr);
+
+// const obj = {a: 1, b: 2};
+// console.log(Object.entries(obj));  // [['a', 1], ['b', 2]]
+
+// const target = {a: 1};
+// const source = {b: 2};
+// Object.assign(target, source);  // target = {a: 1, b: 2}
+
+
+// const obj = {a: 1};
+// Object.freeze(obj);
+// obj.a = 2;  // Fails, as obj is frozen
+
+// const str = "hello";
+// console.log(str.charCodeAt(1));  // 101 ('e')
+
+// console.log("Hello".concat(" World"));  // 'Hello World'
+
+// console.log("hello".indexOf("l"));  // 2
+
+// console.log("hello".match(/l/g));  // ['l', 'l']
+
+// const matches = "test1 test2".matchAll(/t(e)(st(\d))/g);
+// for (const match of matches) {
+//   console.log(match);
+// }  // Logs match details
+
+// console.log(Math.sqrt(16));  // 4
+
+// console.log(Math.log(2));  // 0
+
+console.log(Date.now());  // 1696322839283 (current timestamp)
+
+// let date = new Date(Date.now());
+// let formattedDate = date.getDate().toString().padStart(2, '0') + '/' + 
+//                     (date.getMonth() + 1).toString().padStart(2, '0') + '/' + 
+//                     date.getFullYear();
+// console.log(formattedDate);  // Outputs: "03/10/2024"
 
 
 
+// console.log(date.getMinutes());  // 30
 
+// let set = new Set([1, 2, 3]);
+// set.add(4);
+// console.log(set);  // Set { 1, 2, 3 }
 
-
-
-
-
+let map = new Map([['a', 1], ['b', 2]]);
+console.log(map);  // Map { 'a' => 1, 'b' => 2 }
 
 
