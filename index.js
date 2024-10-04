@@ -163,7 +163,7 @@
 
 // console.log(Math.log(2));  // 0
 
-console.log(Date.now());  // 1696322839283 (current timestamp)
+// console.log(Date.now());  // 1696322839283 (current timestamp)
 
 // let date = new Date(Date.now());
 // let formattedDate = date.getDate().toString().padStart(2, '0') + '/' + 
@@ -179,7 +179,16 @@ console.log(Date.now());  // 1696322839283 (current timestamp)
 // set.add(4);
 // console.log(set);  // Set { 1, 2, 3 }
 
-let map = new Map([['a', 1], ['b', 2]]);
-console.log(map);  // Map { 'a' => 1, 'b' => 2 }
+// let map = new Map([['a', 1], ['b', 2]]);
+// console.log(map);  // Map { 'a' => 1, 'b' => 2 }
 
 
+// let result = confirm("Are you sure?");
+// console.log(result);  // true or false
+
+// let name = prompt("Enter your name:");
+// console.log(name);  // User's input
+
+window.focus();  // Brings the current window into focus
+window.print();  // Opens the print dialog for the current page
+window.scrollTo(0, 500);  // Scrolls vertically to 500px
