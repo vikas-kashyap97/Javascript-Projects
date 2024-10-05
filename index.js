@@ -192,3 +192,4 @@
 window.focus();  // Brings the current window into focus
 window.print();  // Opens the print dialog for the current page
 window.scrollTo(0, 500);  // Scrolls vertically to 500px
+
