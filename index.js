@@ -189,7 +189,24 @@
 // let name = prompt("Enter your name:");
 // console.log(name);  // User's input
 
-window.focus();  // Brings the current window into focus
-window.print();  // Opens the print dialog for the current page
-window.scrollTo(0, 500);  // Scrolls vertically to 500px
+// window.focus();  // Brings the current window into focus
+// window.print();  // Opens the print dialog for the current page
+// window.scrollTo(0, 500);  // Scrolls vertically to 500px
+
+// function greet(name){
+//     console.log(`Hello ${name}`);
+// }
+// greet("Vikas");
+
+let num = [10,25,3,51,16,12]
+
+// for (let i = 0; i < num.length; i++) {
+//     console.log (num[i])
+// }
+
+// num.forEach((val,index,array) => {
+//     console.log(val , index, array);
+// });
+
+
 
