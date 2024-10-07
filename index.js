@@ -208,5 +208,12 @@ let num = [10,25,3,51,16,12]
 //     console.log(val , index, array);
 // });
 
-
+function fun(){
+    console.log("I am function 1");
+    function fun2(){
+        console.log("I am function 2");
+    }
+    fun2()
+}
+fun()
 
