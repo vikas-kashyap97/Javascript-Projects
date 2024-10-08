@@ -208,12 +208,62 @@ let num = [10,25,3,51,16,12]
 //     console.log(val , index, array);
 // });
 
-function fun(){
-    console.log("I am function 1");
-    function fun2(){
-        console.log("I am function 2");
-    }
-    fun2()
-}
-fun()
+// function fun(){
+//     console.log("I am function 1");
+//     function fun2(){
+//         console.log("I am function 2");
+//     }
+//     fun2()
+// }
+// fun()
 
+// function User(name){
+//     if(!new.target){
+//         return new User(name)
+//     }
+//     this.name=name;
+// }
+// let person =  User("Vikas")
+// console.log(person.name);
+
+// var obj1={
+//     fName: "Vikas"
+// }
+
+// var obj2={
+//     lName: "Kashyap"
+// }
+
+// obj2.__proto__ = obj1
+
+// console.log(obj2);
+
+// function Person(name,age){
+//     let person = Object.create(obj)
+//     person.name = name;
+//     person.age = age;
+//     return person
+// }
+// var obj = {
+//     greet(){
+//         console.log(`Hello ${this.name}`)
+//     }
+// }
+// let user = Person ("Vikas", 25)
+// user.greet()
+// console.log(user);
+
+//  better way
+
+class Person{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    greet(){
+        console.log(`Hello ${this.name}`)
+    }
+}
+let user = new Person ("Vikas", 25)
+user.greet()
+console.log(user);
