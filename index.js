@@ -255,15 +255,86 @@ let num = [10,25,3,51,16,12]
 
 //  better way
 
-class Person{
-    constructor(name,age){
-        this.name = name;
-        this.age = age;
-    }
-    greet(){
-        console.log(`Hello ${this.name}`)
-    }
+// class Person{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     greet(){
+//         console.log(`Hello ${this.name}`)
+//     }
+// }
+// let user = new Person ("Vikas", 25)
+// user.greet()
+// console.log(user);
+
+// setTimeout(() => {
+//     console.log("Hello after 2 seconds.");
+    
+// }, 2000);
+
+
+
+
+//// Callback hell (solving with promises)
+
+
+function loadingData() {
+    console.log("Processing...");
+    
+    return new Promise((resolve,reject)=> {
+        setTimeout(() => {
+            console.log("1. Data is loading..."); 
+            resolve()
+        }, 2000);
+    })
+   
 }
-let user = new Person ("Vikas", 25)
-user.greet()
-console.log(user);
+
+function CollectingData() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            console.log("2. Data is collecting...");
+            resolve(); 
+        }, 3000);
+    })
+}
+
+function ApprovingData() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            console.log("3. Data is approving...");
+            reject("Error: Not fullfilled"); 
+        }, 2000);
+    })
+}
+
+function Approved() {
+    console.log("4. Congratulations! Data is approved.")
+}
+
+// loadingData(function () {
+//     CollectingData(function () {
+//         ApprovingData(function () {
+//             Approved(); 
+//         });
+//     });
+// });
+
+// loadingData().then(CollectingData).then(ApprovingData).then(Approved).catch((err)=>{
+//     console.log(err); 
+// })
+
+
+// Async await
+
+async function Ex(){
+    await loadingData();
+    await CollectingData();
+    await ApprovingData()
+    await Approved()
+}
+Ex().catch((err)=>{
+    console.log(err);
+    
+})
