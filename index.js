@@ -279,39 +279,39 @@ let num = [10,25,3,51,16,12]
 //// Callback hell (solving with promises)
 
 
-function loadingData() {
-    console.log("Processing...");
+// function loadingData() {
+//     console.log("Processing...");
     
-    return new Promise((resolve,reject)=> {
-        setTimeout(() => {
-            console.log("1. Data is loading..."); 
-            resolve()
-        }, 2000);
-    })
+//     return new Promise((resolve,reject)=> {
+//         setTimeout(() => {
+//             console.log("1. Data is loading..."); 
+//             resolve()
+//         }, 2000);
+//     })
    
-}
+// }
 
-function CollectingData() {
-    return new Promise((resolve,reject)=>{
-        setTimeout(() => {
-            console.log("2. Data is collecting...");
-            resolve(); 
-        }, 3000);
-    })
-}
+// function CollectingData() {
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("2. Data is collecting...");
+//             resolve(); 
+//         }, 3000);
+//     })
+// }
 
-function ApprovingData() {
-    return new Promise((resolve,reject)=>{
-        setTimeout(() => {
-            console.log("3. Data is approving...");
-            reject("Error: Not fullfilled"); 
-        }, 2000);
-    })
-}
+// function ApprovingData() {
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("3. Data is approving...");
+//             reject("Error: Not fullfilled"); 
+//         }, 2000);
+//     })
+// }
 
-function Approved() {
-    console.log("4. Congratulations! Data is approved.")
-}
+// function Approved() {
+//     console.log("4. Congratulations! Data is approved.")
+// }
 
 // loadingData(function () {
 //     CollectingData(function () {
@@ -328,13 +328,19 @@ function Approved() {
 
 // Async await
 
-async function Ex(){
-    await loadingData();
-    await CollectingData();
-    await ApprovingData()
-    await Approved()
-}
-Ex().catch((err)=>{
-    console.log(err);
+// async function Ex(){
+//     await loadingData();
+//     await CollectingData();
+//     await ApprovingData()
+//     await Approved()
+// }
+// Ex().catch((err)=>{
+//     console.log(err);
     
-})
+// })
+
+
+result = '3'- true;
+console.log(result);
+console.log(typeof result);
+
