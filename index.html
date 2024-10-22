@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keylogger</title>
+    <title>Document</title>
     <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
+        body {
+            padding: 20px;
+            background-color: lightblue;
         }
-        #log, #state {
-            width: 500px;
-            height: 50px;
-            border: 1px solid black;
-            padding: 10px;
-            font-size: 20px;
-            text-align: center;
-            margin-top: 20px;
-            background-color: #ffa500;
-            border-radius: 10px;
+
+        div {
+            padding: 20px;
+            background-color: rgb(236, 145, 8);
+            width: max-content;
         }
-        .button-container {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-        }
-        button {
-            font-size: 20px;
-            padding: 10px 20px;
+
+        span {
+            padding: 20px;
+            background-color: rgb(236, 8, 65);
+            display: block;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1 style="border: 2px solid black; padding: 5px; border-radius: 10px;">Keylogger</h1>
-        <p>This is a simple Keylogger</p>
-        <div class="button-container">
-            <button id="start-btn">Start Logging Keypresses</button>
-            <button id="stop-btn">Stop Logging Keypresses</button>
-        </div>
-        <div class="button-container">
-            <div id="log"></div>
-            <div id="state"></div>
-        </div>
+    <div>
+        <span>
+            <button>Click Me</button>
+        </span>
     </div>
 
-    <script src="keylogger.js"></script>
+    <script>
+
+        let a = document.querySelector('div');
+        console.log(a.getBoundingClientRect());
+
+
+
+
+
+
+    </script>
 </body>
+
 </html>
