@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: rgb(23, 23, 23);
+}
+
+.black-document {
+    height: 100vh;
+    width: 100vw; /* Change to 100vw to fit the entire viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.three-dots {
+    font-size: 40px;
+    position: absolute; /* Use absolute positioning */
+    top: 3%; /* Adjusted for better visibility */
+    left: 45%; /* Adjusted for better visibility */
+    cursor: pointer;
+}
+
+.container {
+    height: 100vh;
+    width: 250px; /* Set a width for the sidebar */
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start hidden off-screen */
+    transition: left 0.3s ease; /* Smooth transition */
+}
+
+.container.active {
+    left: 0; /* Move into view when active */
+}
+
+.cut {
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.nav ul li {
+    margin: 20px 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: color 0.2s;
+}
+
+.nav ul li a:hover {
+    color: black; /* Hover color effect */
+}
