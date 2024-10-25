@@ -2,8 +2,6 @@
 const toggleSidebar = document.getElementById('toggleSidebar');
 const sidebar = document.getElementById('sidebar');
 const closeSidebar = document.getElementById('closeSidebar');
-
-
 document.addEventListener('DOMContentLoaded', () => {
     toggleSidebar.addEventListener('click', () => {
         sidebar.classList.toggle('active'); // Toggle sidebar visibility
