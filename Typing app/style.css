@@ -24,6 +24,12 @@ body{
     border-radius: 10px;
     border: 1px solid #bfbfbf;
 }
+.wrapper .input-field{
+    padding: 13px 20px 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+}
 .content-box .content{
     margin-top: 17px;
     display: flex;
@@ -34,5 +40,47 @@ body{
     border-top: 1px solid #bfbfbf;
 }
 .content-box .result-details{
-    34:14
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 140px);
+}
+.result-details li {
+    display: flex;
+    height: 20px;
+    list-style: none;
+    align-items: center;
+}
+.content button{
+    width: 105px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: orange;
+    padding: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease ;
+}
+.content button:active{
+    transform: scale(0.97);
+}
+.typing-text p span{
+    position: relative;
+}
+.typing-text p span.active{
+    color: orange;
+}
+.typing-text p span.correct{
+    color: green;
+}
+.typing-text p span.incorrect{
+    color: red;
+    outline: 1px solid #fff;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
+::selection{
+    color: #fff;
+    background: orange;
 }
